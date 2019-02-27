@@ -11,6 +11,7 @@ curl -XGET https://domain.name.example.com.us-east-1.es.amazonaws.com/github-dat
 ```
 #### Step 5
 Open the file index-github-data-2019.02.27.backup.json and fix the mappings, types etc. <br>
+Edit fields like: index-name, created, version etc. and save
 
 #### Step 6
 Create a new index with the fixed file
