@@ -22,13 +22,13 @@ curl -XPUT https://domain.name.example.com.us-east-1.es.amazonaws.com/github-dat
 
 - Re-index 
 ```bash
-'curl -X POST "https://domain.name.example.com.us-east-1.es.amazonaws.com/_reindex" -H 'Content-Type: application/json' -d'
+curl -X POST "https://domain.name.example.com.us-east-1.es.amazonaws.com/_reindex" -H 'Content-Type: application/json' -d'
 {
   "source": {
-    "index": "github-data-02.17"
+    "index": "github-data-2019.02.27"
   },
   "dest": {
-    "index": "github-data-2019.02.17-fixed"
+    "index": "github-data-2019.02.27-fixed"
   }
 }
 '
@@ -38,7 +38,7 @@ curl -XPUT https://domain.name.example.com.us-east-1.es.amazonaws.com/github-dat
 - Delete the old index
 
 ```bash
-curl -X DELETE "https://domain.name.example.com.us-east-1.es.amazonaws.com/github-data-2019.02.17"
+curl -X DELETE "https://domain.name.example.com.us-east-1.es.amazonaws.com/github-data-2019.02.27"
 ```
 
 
